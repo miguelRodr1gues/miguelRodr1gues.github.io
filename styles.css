@@ -1,13 +1,30 @@
-.img-list {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    margin-right: 10px; /* Espaçamento entre a imagem e a lista */
-}
-
-ol {
-    margin: 0; /* Remove margem para alinhar ao topo da imagem */
-}
-
 body {
     background-color:bisque;
+
+        font-family: 'Georgia', serif;
+        background-color: #f4f4f9;
+        color: #333;
+    h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        color: #333;
+    }
+    a {
+        color: #1e90ff;
+    }
+}
+
+.img-htmlcssjs {
+    width: 70px;
+    height: auto;
+    float: left; 
+    margin-right: 25px;
+}
+
+.img-reactnext {
+    width: 93px;
+}
+
+.img-diw {
+    width: 250px;
 }
