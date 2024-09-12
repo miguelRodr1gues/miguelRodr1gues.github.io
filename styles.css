@@ -1,3 +1,13 @@
+.img-list {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 10px; /* Espaçamento entre a imagem e a lista */
+}
+
+ol {
+    margin: 0; /* Remove margem para alinhar ao topo da imagem */
+}
+
 body {
-    background-color: #b3b3b3;
+    background-color:bisque;
 }
