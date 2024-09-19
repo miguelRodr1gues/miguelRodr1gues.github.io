@@ -1,28 +1,16 @@
 body {
-        background-color: beige;
-        font-family: 'Georgia', serif;
-        color: #333;
+    background-color: beige;
+    font-family: 'Georgia', serif;
+    color: #333;
+
     h3 {
-        font-family: 'Playfair Display', serif;
-        font-size: 24px;
-        color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #333;
     }
+
     a {
-        color: #1e90ff;
+    color: #1e90ff;
     }
 }
 
-.img-htmlcssjs {
-    width: 70px;
-    height: auto;
-    float: left; 
-    margin-right: 25px;
-}
-
-.img-reactnext {
-    width: 93px;
-}
-
-.img-diw {
-    width: 250px;
-}
