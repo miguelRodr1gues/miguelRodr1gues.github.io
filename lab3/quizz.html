@@ -29,6 +29,8 @@
 
                 <fieldset>
 
+                    <legend>Dados Pessoais</legend>
+
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome"><br><br>
 
@@ -42,42 +44,65 @@
 
                 <fieldset>
 
-                    <p>Qual é sua bebida preferida em Melbourne?</p>
-                    <input type="radio" name="favorite_drink" value="Flat White" required> Flat White<br>
-                    <input type="radio" name="favorite_drink" value="Espresso Martini"> Espresso Martini<br>
-                    <input type="radio" name="favorite_drink" value="Chai Latte"> Chai Latte<br><br>
+                    <legend>Quizz</legend>
 
-                    <p>Quais atividades você gosta de fazer na cidade?</p>
-                    <input type="checkbox" name="activities" value="Arte" autocomplete="on"> Visitar galerias de arte<br>
-                    <input type="checkbox" name="activities" value="Cafés"> Experimentar cafés locais<br>
-                    <input type="checkbox" name="activities" value="Eventos"> Participar de eventos culturais<br><br>
+                    <label for="melbourne-experience">Descreva como seria um dia perfeito explorando a cidade de Melbourne.</label>
+                    <input type="text" name="melbourne-experience" placeholder="Escreva sua experiência em Melbourne aqui"><br><br>
 
-                    <p>Quando você visitou Melbourne pela última vez?</p>
-                    <input type="date" name="visit" form="melbourneQuiz" required>
+                    <!--Bebida Favorita-->
+                    <label>Qual é sua bebida preferida em Melbourne?</label><br><br>
+                    
+                    <input type="radio" id="flatWhite" name="favorite_drink" value="Flat White">
+                    <label for="flatWhite">Flat White</label><br>
+                    
+                    <input type="radio" id="espressoMartini" name="favorite_drink" value="Espresso Martini">
+                    <label for="espressoMartini">Espresso Martini</label><br>
+                    
+                    <input type="radio" id="chaiLatte" name="favorite_drink" value="Chai Latte">
+                    <label for="chaiLatte">Chai Latte</label><br><br>
 
-                    <p>Qual foi o horário aproximado em que chegou na cidade?</p>
-                    <input type="time" name="time" step="900">
+                    <!--Atividades-->
+                    <label>Quais atividades você gosta de fazer na cidade?</label><br><br>
+                    
+                    <input type="checkbox" id="art" name="activities" value="Arte" autocomplete="on">
+                    <label for="art">Visitar galerias de arte</label><br>
+                    
+                    <input type="checkbox" id="cafes" name="activities" value="Cafés">
+                    <label for="cafes">Experimentar cafés locais</label><br>
+                    
+                    <input type="checkbox" id="events" name="activities" value="Eventos">
+                    <label for="events">Participar de eventos culturais</label><br><br>
 
-                    <p>Escolha a cor que mais representa sua experiência em Melbourne:</p>
-                    <input type="color" name="color" value="#ff0000">
+                    <!--Visita-->
+                    <label for="last_visit">Quando você visitou Melbourne pela última vez?</label><br><br>
+                    <input type="date" id="last_visit" name="last_visit" form="melbourneQuiz" required><br><br>
+                    
+                    <!--Horário-->
+                    <label for="arrival_time">Qual foi o horário aproximado em que chegou na cidade?</label><br><br>
+                    <input type="time" id="arrival_time" name="arrival_time" step="900"><br><br>
 
-                    <p>Quantos dias você ficou em Melbourne?</p>
-                    <input type="number" name="days" min="1" max="365" step="1" required>
+                    <!--Cor-->
+                    <label for="melbourne_color">Escolha a cor que mais representa sua experiência em Melbourne:</label><br><br>
+                    <input type="color" id="melbourne_color" name="melbourne_color" value="#ff0000"><br><br>
 
-                    <p>Qual é o seu nível de conhecimento sobre Melbourne?</p>
-                    <input type="range" name="knowledge" min="0" max="200" value="100" step="1">
+                    <!--Dias-->
+                    <label for="stay_duration">Quantos dias você ficou em Melbourne?</label><br><br>
+                    <input type="number" id="stay_duration" name="stay_duration" min="1" max="365" step="1" required><br><br>
 
-                    <p>Envie uma foto da sua visita a Melbourne:</p>
-                    <input type="file" name="photos" accept="image/*"><br>
+                    <!--Conhecimento-->
+                    <label for="knowledge_level">Qual é o seu nível de conhecimento sobre Melbourne?</label><br><br>
+                    <input type="range" id="knowledge_level" name="knowledge_level" min="0" max="100" value="50" step="5"><br><br>
+
+                    <!--Fotos-->
+                    <label for="melbourne_photo">Envie uma foto da sua visita a Melbourne:</label><br><br>
+                    <input type="file" id="melbourne_photo" name="melbourne_photo" accept="image/*"><br><br>
 
                     <input type="reset" value="Limpar Formulário">
-
                     <input type="submit" value="Enviar Formulário">
 
                 </fieldset>
+
             </form>
-
-
 
         </main>
         <footer>
