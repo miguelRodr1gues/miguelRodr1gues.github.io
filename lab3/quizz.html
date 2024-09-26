@@ -23,7 +23,61 @@
 
             <img src = "images/melbourne home.jpg">
 
-            <h2>Quiz</h2>
+            <h2>Quizz</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome"><br><br>
+
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido"><br><br>
+
+                   <label for="email">E-mail:</label>
+                   <input type="email" id="email" name="email">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <p>Qual é sua bebida preferida em Melbourne?</p>
+                    <input type="radio" name="favorite_drink" value="Flat White" required> Flat White<br>
+                    <input type="radio" name="favorite_drink" value="Espresso Martini"> Espresso Martini<br>
+                    <input type="radio" name="favorite_drink" value="Chai Latte"> Chai Latte<br><br>
+
+                    <p>Quais atividades você gosta de fazer na cidade?</p>
+                    <input type="checkbox" name="activities" value="Arte" autocomplete="on"> Visitar galerias de arte<br>
+                    <input type="checkbox" name="activities" value="Cafés"> Experimentar cafés locais<br>
+                    <input type="checkbox" name="activities" value="Eventos"> Participar de eventos culturais<br><br>
+
+                    <p>Quando você visitou Melbourne pela última vez?</p>
+                    <input type="date" name="visit" form="melbourneQuiz" required>
+
+                    <p>Qual foi o horário aproximado em que chegou na cidade?</p>
+                    <input type="time" name="time" step="900">
+
+                    <p>Escolha a cor que mais representa sua experiência em Melbourne:</p>
+                    <input type="color" name="color" value="#ff0000">
+
+                    <p>Quantos dias você ficou em Melbourne?</p>
+                    <input type="number" name="days" min="1" max="365" step="1" required>
+
+                    <p>Qual é o seu nível de conhecimento sobre Melbourne?</p>
+                    <input type="range" name="knowledge" min="0" max="200" value="100" step="1">
+
+                    <p>Envie uma foto da sua visita a Melbourne:</p>
+                    <input type="file" name="photos" accept="image/*"><br>
+
+                    <input type="reset" value="Limpar Formulário">
+
+                    <input type="submit" value="Enviar Formulário">
+
+                </fieldset>
+            </form>
+
+
 
         </main>
         <footer>
