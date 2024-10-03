@@ -1,6 +1,15 @@
+header {
+    background-color: #1565C0; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
 body {
 
     background-color: #ddf1ff;
+    
 
 
 }
