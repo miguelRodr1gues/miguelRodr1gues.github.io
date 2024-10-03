@@ -27,15 +27,14 @@ nav a {
 }
 
 .image-section {
-    align-items: center;
-    gap: 10px; 
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .image-section img {
     width: 45%;
-    height: auto; 
+    height: auto;
 }
 
 section {
