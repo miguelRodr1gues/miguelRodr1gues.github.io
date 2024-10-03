@@ -32,6 +32,11 @@ nav a {
     padding: 20px;
 }
 
+.image-section img {
+    width: 45%;
+    height: auto; 
+}
+
 section {
 
     background-color: white;
