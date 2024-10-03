@@ -26,15 +26,14 @@ nav a {
     color: black;
 }
 
-.image-section {
+.image-container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.image-section img {
-    width: 45%;
+img {
+    width: 49%;
     height: auto;
 }
 
