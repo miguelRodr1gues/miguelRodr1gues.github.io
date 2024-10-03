@@ -19,8 +19,14 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding: auto;
     padding-left: 7px;
     padding-right: 7px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #ffffff; 
+    text-align: center;
+    padding: 15px;
     font-size: 20px;
 }
