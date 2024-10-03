@@ -52,10 +52,9 @@ section img {
 
     height: auto;
     height: auto;
-    padding: 1.8px;
+    padding: 2px;
     width: 49.2%;
     justify-content: space-between;
-    margin-bottom: 10px
 
 }
 
@@ -76,7 +75,7 @@ footer {
 }
 
 #fotografias h3, #video h3, #poema h3 {
-    color: #4CAF50;
+    color: #2e308f;
     font-size: 24px;
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 10px;
