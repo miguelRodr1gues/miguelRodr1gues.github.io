@@ -5,11 +5,14 @@ header {
     text-align: center;
 }
 
-
 body {
 
     background-color: #ddf1ff;
-    
 
+}
 
+nav {
+    background-color: #ffffff; /* Azul mais escuro para navegação */
+    overflow: hidden;
+    text-align: center;
 }
