@@ -26,9 +26,10 @@ nav a {
     color: black;
 }
 
-main img {
-
-    margin-bottom: 10px;
+.image-section {
+    align-items: center;
+    gap: 10px; 
+    padding: 20px;
 }
 
 section {
