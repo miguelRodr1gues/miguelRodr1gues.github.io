@@ -15,6 +15,7 @@ nav {
     background-color: #ffffff; 
     text-align: center;
     padding: 15px;
+    margin-bottom: 10px;
 }
 
 nav a {
@@ -24,11 +25,14 @@ nav a {
     font-size: 20px;
 }
 
+main img {
+
+    margin-bottom: 10px;
+}
+
 section {
 
     background-color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 15px;
     padding-left: 10px;
     padding-right: 10px;
@@ -41,4 +45,5 @@ footer {
     text-align: center;
     padding: 15px;
     font-size: 20px;
+    margin-top: 10px;
 }
