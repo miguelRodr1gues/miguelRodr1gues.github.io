@@ -12,7 +12,14 @@ body {
 }
 
 nav {
-    background-color: #ffffff; /* Azul mais escuro para navegação */
+    background-color: #ffffff; 
     text-align: center;
-    padding: auto;
+    padding: 15px;
+}
+
+nav a {
+    flex-grow: 1; 
+    text-decoration: none;
+    padding: 15px 0; 
+    font-size: 20px;
 }
