@@ -27,7 +27,6 @@ nav a {
 }
 
 .image-container {
-    display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 10px;
