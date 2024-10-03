@@ -30,6 +30,7 @@ nav a {
     align-items: center;
     gap: 10px; 
     padding: 20px;
+    text-align: center;
 }
 
 .image-section img {
