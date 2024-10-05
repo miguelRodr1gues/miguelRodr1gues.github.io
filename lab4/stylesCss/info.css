@@ -14,13 +14,3 @@ th {
     background-color: #f2f2f2;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-section img {
-
-    height: auto;
-    align-items: center;
-    width: 49%;
-    padding: 2px;
-    justify-content: space-between;
-
-}
