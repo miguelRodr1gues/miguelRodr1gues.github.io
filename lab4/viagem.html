@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Viagem</title>
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="stylesCss/viagem.css"/>
     </head>
     <body>
         <header>
@@ -28,7 +28,7 @@
 
             <h2>Viagem</h2>
 
-        <form>
+        <form method="get" action="https://postman-echo.com/get">
             <fieldset>
                 <legend>Dados Pessoais</legend>
 
@@ -76,7 +76,7 @@
                     <input type="radio" id="aviao" name="transportes" value="aviao">
                     <label for="aviao">Avião</label>
                 </div>
-                
+
                 <div class="forms">
                     <input type="radio" id="outrosTransportes" name="transportes" value="outros">
                     <label for="outros">Outros</label>
@@ -99,6 +99,11 @@
 
                 <label for="gastos">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
                 <input type="number" id="gastos" name="gastos">
+
+                <div class="forms">
+                    <input type="reset" value="Limpar Formulário">
+                    <input type="submit" value="Enviar Formulário">
+                </div>
             </fieldset>
         </form>
         </main>
