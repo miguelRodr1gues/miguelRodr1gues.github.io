@@ -33,57 +33,72 @@
                 <legend>Dados Pessoais</legend>
 
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="nome"><br><br>
+                <input type="text" id="nome" name="nome" placeholder="nome">
 
                 <label for="apelido">Apelido</label>
-                <input type="text" name="apelido" id="apelido" placeholder="apelido"><br><br>
+                <input type="text" name="apelido" id="apelido" placeholder="apelido">
 
                <label for="email">Email</label>
                <input type="email" id="email" name="email" placeholder="email">
             </fieldset>
 
             <fieldset>
-               <legend>Dados de Viagem</legend>
+                <legend>Dados de Viagem</legend>
 
-               <label for="partida">Data de Partida</label><br>
-               <input type="date" id="partida" name="partida"><br><br>
+                <label for="partida">Data de Partida</label>
+                <input type="date" id="partida" name="partida">
 
-               <label for="regresso">Data de Regresso</label><br>
-               <input type="date" id="regresso name="regresso><br><br>
+                <label for="regresso">Data de Regresso</label>
+                <input type="date" id="regresso name="regresso>
 
-               <label for="passageiros">Número de Passageiros</label><br>
-               <input type="number" id="passageiros" name="passageiros"><br><br>
+                <label for="passageiros">Número de Passageiros</label>
+                <input type="number" id="passageiros" name="passageiros">
 
-               <label for="transportes">Meio de Transporte Favorito</label><br><br>
+               <!--Transportes-->
+                <label for="transportes">Meio de Transporte Favorito</label>
 
-               <input type="radio" id="carro" name="transportes" value="carro">
-               <label for="carro">Carro</label><br>
+                <div class="forms">
+                    <input type="radio" id="carro" name="transportes" value="carro">
+                    <label for="carro">Carro</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="autocarro" name="transportes" value="autocarro">
+                    <label for="autocarro">Autocarro</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="comboio" name="transportes" value="comboio">
+                    <label for="comboio">Comboio</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="aviao" name="transportes" value="aviao">
+                    <label for="aviao">Avião</label>
+                </div>
                 
-               <input type="radio" id="autocarro" name="transportes" value="autocarro">
-               <label for="autocarro">Autocarro</label><br>
-                
-               <input type="radio" id="comboio" name="transportes" value="comboio">
-               <label for="comboio">Comboio</label><br>
-
-               <input type="radio" id="aviao" name="transportes" value="aviao">
-               <label for="aviao">Avião</label><br>
-
-               <input type="radio" id="outrosTransportes" name="transportes" value="outros">
-               <label for="outros">Outros</label><br><br>
+                <div class="forms">
+                    <input type="radio" id="outrosTransportes" name="transportes" value="outros">
+                    <label for="outros">Outros</label>
+                </div>   
                
-               <label for="serviço">Qual o serviço que deseja na sua viagem?</label><br><br>
+                <label for="serviço">Qual o serviço que deseja na sua viagem?</label>
 
-               <input type="radio" id="basico" name="serviço" value="basico">
-               <label for="basico">Básico</label><br>
+                <div class="forms">
+                    <input type="radio" id="basico" name="serviço" value="basico">
+                    <label for="basico">Básico</label>
+                </div>
 
-               <input type="radio" id="premium" name="serviço" value="premium">
-               <label for="premium">Premium</label><br><br>
+                <div class="forms">
+                    <input type="radio" id="premium" name="serviço" value="premium">
+                    <label for="premium">Premium</label>
+                </div>
 
-               <label for="pedidosEspeciais">Pedidos Especiais</label><br>
-               <input type="text" id="especial" name="pedidos"><br><br>
+                <label for="pedidosEspeciais">Pedidos Especiais</label>
+                <input type="text" id="especial" name="pedidos">
 
-               <label for="gastos">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label><br>
-               <input type="number" id="gastos" name="gastos">
+                <label for="gastos">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
+                <input type="number" id="gastos" name="gastos">
             </fieldset>
         </form>
         </main>
