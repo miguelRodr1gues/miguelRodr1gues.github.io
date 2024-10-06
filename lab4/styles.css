@@ -188,3 +188,11 @@ label, input {
 .forms input {
     margin-right: 10px;
 }
+
+.local-section{
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+}
