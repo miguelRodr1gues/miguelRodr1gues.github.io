@@ -1,0 +1,190 @@
+header {
+    background-color: #1565C0; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+body {
+
+    background-color: #ddf1ff;
+
+}
+
+nav {
+    background-color: #ffffff; 
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section img {
+
+    height: auto;
+    align-items: center;
+    width: 49%;
+    padding: 2px;
+    justify-content: space-between;
+
+}
+
+footer {
+    background-color: #ffffff; 
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.home-section{
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px; 
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#fotografias, #video, #poema {
+
+    color: #0128aa;
+    font-size: 24px;
+    border-bottom: 2px solid #0a6ddf71;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.fotos-juntas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotos-multi {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    border-radius: 10px; 
+    margin: 20px;
+    padding: 40px 60px; 
+    background-color: #f9f9f9; 
+}
+
+.fotos-multi img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 30px;
+}
+
+.fotos-multi p {
+    
+    color: #555; 
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.video iframe {
+    border-radius: 20px;
+}
+
+.poema {
+
+    background-color: #ffffff; 
+    padding: 20px;
+    width: 55%; 
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.poema pre {
+    text-align: center;
+}
+
+.poema h3 {
+    color: #0128aa;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.forms {
+    display: flex;
+    align-items: center; 
+}
+
+.forms input {
+    margin-right: 10px;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.forms {
+    display: flex;
+    align-items: center; 
+}
+
+.forms input {
+    margin-right: 10px;
+}
