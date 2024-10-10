@@ -1,3 +1,8 @@
+h2 {
+
+    margin: 10px;
+}
+
 .ancoras {
 
     text-align: center;
@@ -23,6 +28,7 @@
     padding-bottom: 10px;
     margin-bottom: 20px;
     align-items: center;
+    margin: 10px;
 }
 
 .fotos-juntas {
@@ -37,8 +43,6 @@
     align-items: flex-start;
     border-radius: 10px; 
     margin: 20px;
-    padding: 40px 60px; 
-    background-color: #f9f9f9; 
 }
 
 .fotos-multi img {
