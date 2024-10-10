@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Viagem</title>
+        <link rel="stylesheet" href="css/viagem.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Melbourne</h1>
+        </header>
+
+        <nav>
+            <a href = "index.html">Home</a>
+            <a href = "local.html">Localização</a>
+            <a href = "multimedia.html">Multimédia</a>
+            <a href = "info.html">Informação</a>
+            <a href = "quizz.html">Quizz</a>
+            <a href = "viagem.html">Viagem</a>
+            <a href = "pontosinteresse.html">Pontos de Interesse</a>
+        </nav>
+
+        <main>
+            <section>
+                <img src="images/melbourneHome.jpg" alt="Imagem de Melbourne - Centro da Cidade">
+                <img src="images/melbourneBeach.jpg" alt="Imagem de Melbourne - Praia">
+            </section>
+
+            <h2>Viagem</h2>
+
+        <form method="get" action="https://postman-echo.com/get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="nome">
+
+                <label for="apelido">Apelido</label>
+                <input type="text" name="apelido" id="apelido" placeholder="apelido">
+
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email" placeholder="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Viagem</legend>
+
+                <label for="partida">Data de Partida</label>
+                <input type="date" id="partida" name="partida">
+
+                <label for="regresso">Data de Regresso</label>
+                <input type="date" id="regresso name="regresso>
+
+                <label for="passageiros">Número de Passageiros</label>
+                <input type="number" id="passageiros" name="passageiros">
+
+               <!--Transportes-->
+                <label for="transportes">Meio de Transporte Favorito</label>
+
+                <div class="forms">
+                    <input type="radio" id="carro" name="transportes" value="carro">
+                    <label for="carro">Carro</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="autocarro" name="transportes" value="autocarro">
+                    <label for="autocarro">Autocarro</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="comboio" name="transportes" value="comboio">
+                    <label for="comboio">Comboio</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="aviao" name="transportes" value="aviao">
+                    <label for="aviao">Avião</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="outrosTransportes" name="transportes" value="outros">
+                    <label for="outros">Outros</label>
+                </div>   
+               
+                <label for="serviço">Qual o serviço que deseja na sua viagem?</label>
+
+                <div class="forms">
+                    <input type="radio" id="basico" name="serviço" value="basico">
+                    <label for="basico">Básico</label>
+                </div>
+
+                <div class="forms">
+                    <input type="radio" id="premium" name="serviço" value="premium">
+                    <label for="premium">Premium</label>
+                </div>
+
+                <label for="pedidosEspeciais">Pedidos Especiais</label>
+                <input type="text" id="especial" name="pedidos">
+
+                <label for="gastos">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
+                <input type="number" id="gastos" name="gastos">
+
+                <div class="forms">
+                    <input type="reset" value="Limpar Formulário">
+                    <input type="submit" value="Enviar Formulário">
+                </div>
+            </fieldset>
+        </form>
+        </main>
+        <footer>
+            <p>Miguel Rodrigues | 2º Engenharia Informática | Lusófona | DIW 2024</p>
+        </footer>
+    </body>
+</html>

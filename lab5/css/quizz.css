@@ -1,0 +1,21 @@
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.forms {
+    display: flex;
+    align-items: center; 
+}
+
+.forms input {
+    margin-right: 10px;
+}
