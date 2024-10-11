@@ -6,7 +6,6 @@
   
   
   header, main, article {
-    /* centrando o texto */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,3 +34,9 @@
     background: black;
     color: white;
   }
+
+  * {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box;
+}
