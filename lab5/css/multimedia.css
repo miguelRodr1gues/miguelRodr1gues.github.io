@@ -4,13 +4,13 @@ h2 {
 }
 
 .ancoras {
-
-    text-align: center;
     background-color: rgb(55, 119, 192);
     padding: 10px;
     border-radius: 20px;
+    text-align: center;
     justify-content: center;
-    margin: 10px;
+    width:30%;
+    margin: auto;
 }
 
 .ancoras a {
