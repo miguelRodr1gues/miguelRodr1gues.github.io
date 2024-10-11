@@ -66,11 +66,15 @@ footer {
   margin-top: 10px;
 }
 
-#poema {
+article {
+
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 100vw;
+}
+
+#poema {
   height: 50vh; 
   background-color: #87CEEB;
 }
@@ -89,12 +93,6 @@ footer {
 #poema p:last-child {
 
   font-style: italic;
-}
-
-#paisagem {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
 }
 
 .imagem { 
@@ -121,11 +119,8 @@ footer {
 
 #cidades {
 
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-color: #d5f3ff;
   width: 100vw;
 }
@@ -140,11 +135,10 @@ footer {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100px;
   height: 100%;
   font-size: 20px;
-  padding-right: 10px;
 }
 
 #cidades section {
