@@ -13,7 +13,10 @@ body {
 
 nav {
     background-color: #ffffff; 
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 15px;
 }
 
@@ -34,19 +37,14 @@ nav a:hover {
 
 section img {
 
-    height: auto;
-    align-items: center;
-    width: 49%;
-    padding: 2px;
-    justify-content: space-between;
-
+    width: 50%;
 }
 
 footer {
     background-color: #ffffff; 
     text-align: center;
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
 
@@ -55,4 +53,11 @@ footer {
 section {
 
     margin: 10px;
+}
+
+.imagens {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,3 +1,10 @@
+.separador-categorias-ordenadas {
+
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+}
+
 .separador-categorias {
 
     padding: 15px;
@@ -13,6 +20,8 @@
 
 .imagem iframe {
     border-radius: 30px;
+    width: 500px;
+    height: 300px;
 }
 
 h3 {
