@@ -1,6 +1,11 @@
+* {
+  margin:0;  
+  padding:0;  
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0px
 }
 
 header {
@@ -25,6 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  z-index: 10px;
 }
 
 nav a {
@@ -60,13 +66,6 @@ footer {
   margin-top: 10px;
 }
 
-
-.imagens {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #poema {
   display: flex;
   justify-content: center;
@@ -77,7 +76,7 @@ footer {
 }
 
 #poema p {
-  font-size: 1.5em; 
+  font-size: 1.5em;
   font-weight: normal;
 }
 
@@ -87,16 +86,22 @@ footer {
   margin: 10px;
 }
 
-#paisagem {
-  margin: 0;
-  padding: 0;
+#poema p:last-child {
+
+  font-style: italic;
 }
 
-.imagem-container {
+#paisagem {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.imagem { 
   position: relative;
 }
 
-.imagem-container img {
+.imagem img {
   width: 100vw;
 }
 
@@ -105,7 +110,7 @@ footer {
   bottom: 10px;
   right: 10px;
   color: white; 
-  padding: 5px;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -118,35 +123,37 @@ footer {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: aliceblue;
-
+  background-color: #d5f3ff;
+  width: 100vw;
 }
 
 #cidades img {
 
   width: 100px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-radius: 30px 0 0 30px;
 }
 
 #cidades div {
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100%;
   font-size: 20px;
-  text-align: center;
+  padding-right: 10px;
 }
 
 #cidades section {
 
-  border: 1px solid black;
-  border-radius: 30px;
   display: flex;
   align-items: center;
-  margin: 10px;
   background-color: white;
+  margin: 15px;
+  border-radius: 30px;
 }
 
 
