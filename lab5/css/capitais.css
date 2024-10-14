@@ -16,11 +16,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  flex-wrap: wrap;
 }
 
 header h1 {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   font-size: 24px;
   font-weight: bold;
@@ -29,8 +29,7 @@ header h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  z-index: 10px;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -39,6 +38,7 @@ nav a {
   font-size: 18px;
   padding: 10px 15px;
   border-radius: 8px;
+  margin-left: 10px;
 }
 
 nav a:hover {
@@ -72,6 +72,7 @@ article {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  width: 100%;
 }
 
 #poema {
