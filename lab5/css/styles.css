@@ -35,10 +35,6 @@ nav a:hover {
     color: black;
 }
 
-section img {
-    width: 50%;
-}
-
 footer {
     background-color: #ffffff; 
     text-align: center;
@@ -56,4 +52,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+}
+
+.imagens img {
+
+    margin: 10px;
+    border-radius: 10px;
 }

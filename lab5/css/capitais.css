@@ -38,7 +38,7 @@ nav a {
   font-size: 18px;
   padding: 10px 15px;
   border-radius: 8px;
-  margin-left: 10px;
+  margin: 0 0 10px 10px
 }
 
 nav a:hover {
