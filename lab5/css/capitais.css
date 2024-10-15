@@ -28,15 +28,22 @@ header h1 {
 
 nav {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.navbar {
+
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 nav a {
   color: rgb(37, 37, 37);
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 5px 16px 5px 16px;
   border-radius: 8px;
   margin: 0 0 10px 10px
 }

@@ -12,15 +12,15 @@
         </header>
 
         <nav>
-            <a href = "/index.html">Main</a>
-            <a href = "home.html">Home</a>
-            <a href = "local.html">Localização</a>
-            <a href = "multimedia.html">Multimédia</a>
-            <a href = "info.html">Informação</a>
-            <a href = "quizz.html">Quizz</a>
-            <a href = "viagem.html">Viagem</a>
-            <a href = "pontosinteresse.html">Pontos de Interesse</a>
-            <a href = "capitais.html">Capitais</a>
+            <a href="/index.html">Main</a>
+            <a href="home.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+            <a href="pontosinteresse.html">Pontos de Interesse</a>
+            <a href="capitais.html">Capitais</a>
         </nav>
 
         <main>
@@ -31,102 +31,80 @@
                 </div>
             </section>  
 
+
             <section>
+                <h2>Quizz</h2>
 
-            <h2>Quizz</h2>
+                <form method="get" action="https://postman-echo.com/get">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
 
-            <form method="get" action="https://postman-echo.com/get">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
+                        <label for="apelido">Apelido</label>
+                        <input type="text" id="apelido" name="apelido" placeholder="Apelido" required>
 
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="nome">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </fieldset>
 
-                    <label for="apelido">Apelido</label>
-                    <input type="text" name="apelido" id="apelido" placeholder="apelido">
+                    <fieldset>
+                        <legend>Quizz</legend>
 
-                   <label for="email">Email</label>
-                   <input type="email" id="email" name="email" placeholder="email">
-                </fieldset>
+                        <label for="melbourne-experience">Descreva como seria um dia perfeito explorando a cidade de Melbourne.</label>
+                        <input type="text" id="melbourne-experience" name="melbourne-experience" placeholder="Escreva sua experiência em Melbourne aqui" required>
 
-                <fieldset>
-                    <legend>Quizz</legend>
+                        <label>Qual é sua bebida preferida em Melbourne?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="flatWhite" name="favorite_drink" value="Flat White">
+                            <label for="flatWhite">Flat White</label>
+                            
+                            <input type="radio" id="espressoMartini" name="favorite_drink" value="Espresso Martini">
+                            <label for="espressoMartini">Espresso Martini</label>
+                            
+                            <input type="radio" id="chaiLatte" name="favorite_drink" value="Chai Latte">
+                            <label for="chaiLatte">Chai Latte</label>
+                        </div>
 
-                    <label for="melbourne-experience">Descreva como seria um dia perfeito explorando a cidade de Melbourne.</label>
-                    <input type="text" name="melbourne-experience" size="70"   placeholder="Escreva sua experiência em Melbourne aqui">
+                        <label>Quais atividades você gosta de fazer na cidade?</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="art" name="activities" value="Arte">
+                            <label for="art">Visitar galerias de arte</label>
+                            
+                            <input type="checkbox" id="cafes" name="activities" value="Cafés">
+                            <label for="cafes">Experimentar cafés locais</label>
 
-                    <!--Bebida Favorita-->
-                    <label>Qual é sua bebida preferida em Melbourne?</label>
-                    
-                    <div class="forms">
-                        <input type="radio" id="flatWhite" name="favorite_drink" value="Flat White">
-                        <label for="flatWhite">Flat White</label>
-                    </div>
+                            <input type="checkbox" id="events" name="activities" value="Eventos">
+                            <label for="events">Participar de eventos culturais</label>
+                        </div>
 
-                    <div class="forms">
-                        <input type="radio" id="espressoMartini" name="favorite_drink" value="Espresso Martini">
-                        <label for="espressoMartini">Espresso Martini</label>
-                    </div>
+                        <label for="last_visit">Quando você visitou Melbourne pela última vez?</label>
+                        <input type="date" id="last_visit" name="last_visit" required>
+                        
+                        <label for="arrival_time">Qual foi o horário aproximado em que chegou na cidade?</label>
+                        <input type="time" id="arrival_time" name="arrival_time">
 
-                    <div class="forms">
-                        <input type="radio" id="chaiLatte" name="favorite_drink" value="Chai Latte">
-                        <label for="chaiLatte">Chai Latte</label>
-                    </div>
+                        <label for="melbourne_color">Escolha a cor que mais representa sua experiência em Melbourne:</label>
+                        <input type="color" id="melbourne_color" name="melbourne_color" value="#ff0000">
 
-                    <!--Atividades-->
-                    <label>Quais atividades você gosta de fazer na cidade?</label>
-                    
-                    <div class="forms">
-                        <input type="checkbox" id="art" name="activities" value="Arte" autocomplete="on">
-                        <label for="art">Visitar galerias de arte</label>
-                    </div>
+                        <label for="stay_duration">Quantos dias você ficou em Melbourne?</label>
+                        <input type="number" id="stay_duration" name="stay_duration" min="1" max="365" step="1" required>
 
-                    <div class="forms">
-                        <input type="checkbox" id="cafes" name="activities" value="Cafés">
-                        <label for="cafes">Experimentar cafés locais</label>
-                    </div>
+                        <label for="knowledge_level">Qual é o seu nível de conhecimento sobre Melbourne?</label>
+                        <input type="range" id="knowledge_level" name="knowledge_level" min="0" max="300" value="150" step="5">
 
-                    <div class="forms">
-                        <input type="checkbox" id="events" name="activities" value="Eventos">
-                        <label for="events">Participar de eventos culturais</label>
-                    </div>
+                        <label for="melbourne_photo">Envie uma foto da sua visita a Melbourne:</label>
+                        <input type="file" id="melbourne_photo" name="melbourne_photo" accept="image/*">
 
-                    <!--Visita-->
-                    <label for="last_visit">Quando você visitou Melbourne pela última vez?</label>
-                    <input type="date" id="last_visit" name="last_visit" form="melbourneQuiz" required>
-                    
-                    <!--Horário-->
-                    <label for="arrival_time">Qual foi o horário aproximado em que chegou na cidade?</label>
-                    <input type="time" id="arrival_time" name="arrival_time" step="900">
-
-                    <!--Cor-->
-                    <label for="melbourne_color">Escolha a cor que mais representa sua experiência em Melbourne:</label>
-                    <input type="color" id="melbourne_color" name="melbourne_color" value="#ff0000">
-
-                    <!--Dias-->
-                    <label for="stay_duration">Quantos dias você ficou em Melbourne?</label>
-                    <input type="number" id="stay_duration" name="stay_duration" min="1" max="365" step="1" required>
-
-                    <!--Conhecimento-->
-                    <label for="knowledge_level">Qual é o seu nível de conhecimento sobre Melbourne?</label>
-                    <input type="range" id="knowledge_level" name="knowledge_level" min="0" max="300" value="150" step="5">
-
-                    <!--Fotos-->
-                    <label for="melbourne_photo">Envie uma foto da sua visita a Melbourne:</label>
-                    <input type="file" id="melbourne_photo" name="melbourne_photo" accept="image/*">
-
-                    <!--Limpar ou Enivar Formulário-->
-                    <div class="forms">
-                        <input type="reset" value="Limpar Formulário">
-                        <input type="submit" value="Enviar Formulário">
-                    </div>
-
-                </fieldset>
-            </form>
-
+                        <div class="buttons">
+                            <input type="reset" value="Limpar Formulário">
+                            <input type="submit" value="Enviar Formulário">
+                        </div>
+                    </fieldset>
+                </form>
             </section>
-
         </main>
+
         <footer>
             <p>Miguel Rodrigues | 2º Engenharia Informática | Lusófona | DIW 2024</p>
         </footer>

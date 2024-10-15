@@ -28,11 +28,14 @@ nav a {
     color: black;
     border-radius: 10px;
     margin: 10px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
     background-color: #ddd;
     color: black;
+    transform: scale(1.10);
+
 }
 
 footer {

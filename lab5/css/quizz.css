@@ -1,73 +1,113 @@
 body {
-
     font-family: Arial, Helvetica, sans-serif;
+}
 
+h2 {
+    text-align: center;
 }
 
 form {
-    background-color: #ffffff; /* Fundo do formulário */
+    background-color: #ffffff;
     padding: 30px;
-    border-radius: 12px; /* Bordas arredondadas */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 600px;
+    min-width: 300px;
     margin: auto;
-    transition: transform 0.3s; /* Transição suave para hover */
+    transition: transform 0.3s;
 }
 
 form:hover {
-    transform: translateY(-5px); /* Levantar o formulário ao passar o mouse */
+    transform: translateY(-3px);
 }
 
-.form-group {
-    margin-bottom: 20px; /* Espaçamento entre grupos de formulário */
+legend {
+
+    font-weight: bold;
 }
 
-label {
-    font-size: small; /* Tamanho da fonte para o label */
+label, input {
+    font-size: small;
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #555; /* Cor do texto do label */
+    color: #686868;
 }
 
-input[type="text"], select {
-    font-size: medium; /* Tamanho da fonte para inputs */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="color"],
+input[type="file"],
+input[type="range"] {
+    font-size: medium;
     width: 100%;
-    padding: 12px; /* Padding maior para um visual mais confortável */
-    border: 1px solid #ced4da; /* Borda mais clara */
-    border-radius: 6px; /* Bordas arredondadas */
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
     box-sizing: border-box;
-    transition: border-color 0.3s; /* Transição suave para foco */
+    transition: border-color 0.3s;
 }
 
-input[type="text"]:focus, select:focus {
-    border-color: #3498db; /* Mudança de cor na borda ao focar */
-    outline: none; /* Remover contorno padrão */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="color"],
+input[type="file"],
+input[type="range"] {
+    border-color: #3498db;
+    outline: none;
 }
 
-input[type="radio"] {
-    margin: 10px; /* Espaçamento para os botões de rádio */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
 }
 
-button {
-    background-color: #3498db; /* Cor do botão */
+button, input[type="submit"], input[type="reset"] {
+    background-color: #3498db;
     color: white;
-    padding: 12px; /* Padding maior para um botão mais confortável */
+    padding: 12px;
     border: none;
-    border-radius: 6px; /* Bordas arredondadas */
+    border-radius: 6px;
     cursor: pointer;
     width: 100%;
-    font-size: medium; /* Tamanho da fonte para o botão */
-    transition: background-color 0.3s, transform 0.2s; /* Transição suave para hover */
-    
+    font-size: medium;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover {
-    background-color: #000000; /* Cor do botão ao passar o mouse */
-    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #000000;
+    transform: scale(1.02);
 }
 
-input {
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
-    margin: 10px;
+.imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons input {
+    width: 48%;
 }
