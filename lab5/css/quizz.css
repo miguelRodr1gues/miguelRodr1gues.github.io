@@ -21,9 +21,15 @@ form:hover {
     transform: translateY(-3px);
 }
 
+fieldset {
+
+    margin-bottom: 20px;
+}
+
 legend {
 
     font-weight: bold;
+    color: #303030;
 }
 
 label, input {
@@ -51,14 +57,14 @@ input[type="range"] {
     transition: border-color 0.3s;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="time"],
-input[type="number"],
-input[type="color"],
-input[type="file"],
-input[type="range"] {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+input[type="color"]:focus,
+input[type="file"]:focus,
+input[type="range"]:focus {
     border-color: #3498db;
     outline: none;
 }
@@ -68,7 +74,7 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
-button, input[type="submit"], input[type="reset"] {
+input[type="submit"], input[type="reset"] {
     background-color: #3498db;
     color: white;
     padding: 12px;
@@ -80,7 +86,7 @@ button, input[type="submit"], input[type="reset"] {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+input[type="submit"]:hover, input[type="reset"]:hover {
     background-color: #000000;
     transform: scale(1.02);
 }
@@ -111,3 +117,5 @@ img {
 .buttons input {
     width: 48%;
 }
+
+
