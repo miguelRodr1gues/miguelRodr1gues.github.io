@@ -3,7 +3,7 @@ header {
     color: white;
     padding: 13px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -52,11 +52,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
 }
 
 .imagens img {
 
     margin: 10px;
     border-radius: 10px;
+    width: 700px;
 }

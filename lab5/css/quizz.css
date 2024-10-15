@@ -1,21 +1,73 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+form {
+    background-color: #ffffff; /* Fundo do formulário */
+    padding: 30px;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.3s; /* Transição suave para hover */
+}
+
+form:hover {
+    transform: translateY(-5px); /* Levantar o formulário ao passar o mouse */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espaçamento entre grupos de formulário */
+}
+
 label {
-    font-size: small;
+    font-size: small; /* Tamanho da fonte para o label */
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555; /* Cor do texto do label */
+}
+
+input[type="text"], select {
+    font-size: medium; /* Tamanho da fonte para inputs */
+    width: 100%;
+    padding: 12px; /* Padding maior para um visual mais confortável */
+    border: 1px solid #ced4da; /* Borda mais clara */
+    border-radius: 6px; /* Bordas arredondadas */
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Transição suave para foco */
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #3498db; /* Mudança de cor na borda ao focar */
+    outline: none; /* Remover contorno padrão */
+}
+
+input[type="radio"] {
+    margin: 10px; /* Espaçamento para os botões de rádio */
+}
+
+button {
+    background-color: #3498db; /* Cor do botão */
+    color: white;
+    padding: 12px; /* Padding maior para um botão mais confortável */
+    border: none;
+    border-radius: 6px; /* Bordas arredondadas */
+    cursor: pointer;
+    width: 100%;
+    font-size: medium; /* Tamanho da fonte para o botão */
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave para hover */
+    
+}
+
+button:hover {
+    background-color: #000000; /* Cor do botão ao passar o mouse */
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
 }
 
 input {
-    font-size: medium;
-}
 
-label, input {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.forms {
-    display: flex;
-    align-items: center; 
-}
-
-.forms input {
-    margin-right: 10px;
+    margin: 10px;
 }

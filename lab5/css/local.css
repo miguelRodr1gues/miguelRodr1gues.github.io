@@ -5,3 +5,22 @@
     padding: 10px 20px;
     margin: 10px;
 }
+
+.local-section h2 {
+
+    color: rgb(38, 197, 254);
+}
+
+section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(81, 81, 81, 0.5);
+    width: 100%;
+    }
