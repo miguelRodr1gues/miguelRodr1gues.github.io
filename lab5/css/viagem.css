@@ -8,7 +8,7 @@ h2 {
 
 form {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 600px;
@@ -22,7 +22,7 @@ form:hover {
 }
 
 fieldset {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 legend {
@@ -42,9 +42,9 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="number"] {
-    font-size: medium;
+    font-size: small;
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     border: 1px solid #ced4da;
     border-radius: 6px;
     box-sizing: border-box;
@@ -64,13 +64,19 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
 input[type="submit"], 
 input[type="reset"] {
     background-color: #3498db;
     color: white;
     padding: 12px;
     border: none;
-    border-radius: 6px;
+    border-radius: 20px;
     cursor: pointer;
     width: 100%;
     font-size: medium;
@@ -80,13 +86,12 @@ input[type="reset"] {
 input[type="submit"]:hover, 
 input[type="reset"]:hover {
     background-color: #000000;
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
 
 .forms {
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .forms input {
