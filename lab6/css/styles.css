@@ -52,7 +52,7 @@ section {
 .imagens img {
     margin: 15px;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s;~
 }
 
 .imagens img:hover {
@@ -66,13 +66,3 @@ footer {
     font-size: 15px;
     margin-top: 10px;
 }
-
-header { grid-area: header;}
-
-nav { grid-area: nav;}
-
-main {grid-area: main;}
-
-aside {grid-area: aside;}
-
-footer {grid-area: footer;}
