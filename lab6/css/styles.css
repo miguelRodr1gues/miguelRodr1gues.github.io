@@ -50,13 +50,13 @@ section {
 }
 
 .imagens img {
-    margin: 10px;
+    margin: 15px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
 .imagens img:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 footer {
@@ -67,23 +67,12 @@ footer {
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-    .imagens img {
-        max-width: 100%;
-        height: auto;
-    }
-}
+header { grid-area: header;}
 
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-    .imagens img {
-        max-width: 80%;
-        height: auto;
-    }
-}
+nav { grid-area: nav;}
 
-@media only screen and (min-width: 1025px) {
-    .imagens img {
-        max-width: 60%;
-        height: auto;
-    }
-}
+main {grid-area: main;}
+
+aside {grid-area: aside;}
+
+footer {grid-area: footer;}
