@@ -151,6 +151,14 @@ article {
   border-radius: 30px;
 }
 
+#galeria section {
+
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  
+}
+
 
 
 
