@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100vw;
 }
 
 h1 {
@@ -78,6 +79,7 @@ article {
 #poema {
   height: 50vh; 
   background-color: #87CEEB;
+  width: 100vw;
 }
 
 #poema p {
@@ -101,7 +103,7 @@ article {
 }
 
 .imagem img {
-  width: 100vw;
+  width: 101vw;
 }
 
 .autor {
@@ -151,13 +153,32 @@ article {
   border-radius: 30px;
 }
 
+.parallax-container {
+  bottom: 10px;
+  right: 10px;
+  color: white; 
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.parallax-container p {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.parallax-container img {
+  width: 101vw;
+}
+
 #galeria section {
 
   display: flex;
   align-items: center;
   margin: 15px;
-  
 }
+
+
 
 
 
