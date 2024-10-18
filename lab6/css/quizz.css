@@ -1,9 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     text-align: center;
+    margin-top: 20px;
 }
 
 form {
@@ -13,7 +17,7 @@ form {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     min-width: 300px;
-    margin: auto;
+    margin: 20px auto;
     transition: transform 0.3s;
 }
 
@@ -26,7 +30,6 @@ fieldset {
 }
 
 legend {
-
     font-weight: bold;
     color: #303030;
 }
@@ -73,7 +76,8 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
-input[type="submit"], input[type="reset"] {
+input[type="submit"],
+input[type="reset"] {
     background-color: #3498db;
     color: white;
     padding: 12px;
@@ -85,12 +89,14 @@ input[type="submit"], input[type="reset"] {
     transition: background-color 0.3s, transform 0.2s;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
     background-color: #000000;
     transform: scale(1.02);
 }
 
-.radio-group, .checkbox-group {
+.radio-group,
+.checkbox-group {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
@@ -125,5 +131,3 @@ img {
 .forms input {
     margin-right: 10px;
 }
-
-
