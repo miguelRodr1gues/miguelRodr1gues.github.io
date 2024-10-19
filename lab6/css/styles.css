@@ -20,6 +20,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     padding: 8px;
+    position: sticky;
 }
 
 nav a {
@@ -53,6 +54,7 @@ section {
     margin: 15px;
     border-radius: 10px;
     transition: transform 0.3s;
+    width: 49%;
 }
 
 .imagens img:hover {
