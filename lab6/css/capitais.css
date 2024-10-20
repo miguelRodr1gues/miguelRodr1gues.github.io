@@ -9,37 +9,40 @@ body {
 }
 
 header {
-  position: sticky;
-  background-color: rgb(219, 219, 219);
-  color: rgb(0, 0, 0);
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100vw;
+  z-index: 1;
+
+  animation-name: slide-down;
+  animation-duration: 1s;
 }
 
 h1 {
   display: flex;
   margin: 10px;
   padding: 0;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 nav {
-  display: flex;
   flex-wrap: wrap;
 }
 
 nav a {
   color: rgb(37, 37, 37);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px 16px 5px 16px;
   border-radius: 8px;
-  margin: 0 0 10px 10px
+  margin: 0 5px 0 5px;
 }
 
 nav a:hover {
@@ -78,13 +81,13 @@ article {
 
 #poema {
   height: 50vh; 
-  background-color: #87CEEB;
   width: 100vw;
 }
 
 #poema p {
   font-size: 1.5em;
   font-weight: normal;
+  color: white;
 }
 
 #poema p:first-child {
@@ -103,7 +106,7 @@ article {
 }
 
 .imagem img {
-  width: 100vw;
+  width: 101vw;
 }
 
 .autor {
@@ -121,10 +124,9 @@ article {
 }
 
 #cidades {
-
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: #d5f3ff;
+  background-color: #2a2a2a;
   width: 100vw;
 }
 
@@ -140,7 +142,6 @@ article {
   align-items: center;
   justify-content: space-around;
   width: 100px;
-  height: 100%;
   font-size: 20px;
 }
 
@@ -153,32 +154,22 @@ article {
   border-radius: 30px;
 }
 
-.parallax {
+#poema, .parallax {
 
-  background-image: url("images/parallax.jpg");
+  background-image: url('/lab6/images/parallax_beach.jpg');
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #333;
-
-
+  width: 100vw;
 }
-
-.parallax-image {
-  background-image: url("images/parallax.jpg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #333;
-}
-
 
 .parallax-content {
   margin: 30px;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: white;
 }
 
 
@@ -197,6 +188,11 @@ article {
   background-color: #2d2d2d;
   display: flex;
   padding: 30px;
+}
+
+#galeria section {
+
+  flex-direction: wrap;
 }
 
 #galeria img {
@@ -296,7 +292,9 @@ article {
 #video-background {
   position: relative;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
+
 }
 
 /* Estilo do vídeo de fundo */
@@ -320,6 +318,15 @@ article {
   padding: 20px;
   text-align: center;
   font-size: 24px;
+}
+
+@keyframes slide-down{
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 

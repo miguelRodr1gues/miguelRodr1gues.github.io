@@ -20,7 +20,6 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     padding: 8px;
-    position: sticky;
 }
 
 nav a {

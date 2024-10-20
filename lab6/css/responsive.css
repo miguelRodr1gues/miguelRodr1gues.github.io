@@ -6,7 +6,7 @@ aside { grid-area: aside-area; }
 footer { grid-area: footer-area; }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1440px) {
     body {
         display: grid;
         width: 100vw;
@@ -32,16 +32,7 @@ footer { grid-area: footer-area; }
     }
 }
 
-@media only screen and (max-width: 1440px) {
-    body {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'header-area' 
-            'nav-area' 
-            'main-area' 
-            'aside-area' 
-            'footer-area';
-    }
+@media only screen and (min-width: 801px) and (max-width: 1440px) {
 
     .imagens {
         display: flex;
@@ -50,7 +41,7 @@ footer { grid-area: footer-area; }
     }
 
     .imagens img {
-        width: 49%;
+        width: 48%;
         margin: 10px;
     }
 }
