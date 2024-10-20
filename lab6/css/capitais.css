@@ -153,8 +153,21 @@ article {
   border-radius: 30px;
 }
 
+.parallax {
+
+  background-image: url("images/parallax.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+
+
+}
+
 .parallax-image {
-  background-image: url("https://www.bing.com/images/search?view=detailV2&ccid=CMO3ZN62&id=56801F5A1E842336808EF3C0191CEFEBE9F0CA10&thid=OIP.CMO3ZN62UwoTIRWZXfPnrgHaEK&mediaurl=https%3a%2f%2fwallpapershome.com%2fimages%2fwallpapers%2fmelbourne-3840x2160-4k-hd-wallpaper-australia-best-beaches-in-the-3871.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.08c3b764deb6530a132115995df3e7ae%3frik%3dEMrw6evvHBnA8w%26pid%3dImgRaw%26r%3d0&exph=2160&expw=3840&q=melbourne+beach+4k&simid=608020125672089757&FORM=IRPRST&ck=52F1911E50DA405F2AA6D04A373172E9&selectedIndex=0&itb=0");
+  background-image: url("images/parallax.jpg");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -181,7 +194,7 @@ article {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100vw;
-  background-color: #F5F5F5;
+  background-color: #2d2d2d;
   display: flex;
   padding: 30px;
 }
@@ -278,6 +291,36 @@ article {
   transform: translateX(-100px);
 }
 
+/*video em background*/
+
+#video-background {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Estilo do vídeo de fundo */
+#video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilo para a barra de texto */
+.text-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.6);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
 
 
 
