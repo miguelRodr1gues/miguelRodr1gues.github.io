@@ -51,14 +51,14 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #2b2b2b;
+  background-color: #393939;
   color: white;
   transform: scale(1.05);
 }
 
 nav a:last-child {
   color: white;
-  background-color: #2b2b2b;
+  background-color: #393939;
 }
 
 section img {
