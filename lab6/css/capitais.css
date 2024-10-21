@@ -33,28 +33,32 @@ h1 {
 }
 
 nav {
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 nav a {
-  color: rgb(37, 37, 37);
+  color: rgb(0, 0, 0);
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  font-size: 20px;
-  padding: 5px 16px 5px 16px;
-  border-radius: 8px;
-  margin: 0 5px 0 5px;
+  font-size: 17px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-  background-color: #d1d1d1;
-}
-
-nav a:link {
-  background-color: #87CEEB;
+  background-color: #2b2b2b;
+  color: white;
+  transform: scale(1.05);
 }
 
 nav a:last-child {
-  background-color: #d1d1d1;
+  color: white;
+  background-color: #2b2b2b;
 }
 
 section img {
@@ -103,6 +107,7 @@ article {
 
 .imagem { 
   position: relative;
+  background-color: #2a2a2a;
 }
 
 .imagem img {
@@ -113,7 +118,7 @@ article {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: white; 
+  color: white;
   padding: 10px;
   text-decoration: none;
   font-size: 20px;
@@ -131,7 +136,6 @@ article {
 }
 
 #cidades img {
-
   width: 100px;
   border-radius: 30px 0 0 30px;
 }
@@ -142,7 +146,7 @@ article {
   align-items: center;
   justify-content: space-around;
   width: 100px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #cidades section {
@@ -310,14 +314,14 @@ article {
 /* Estilo para a barra de texto */
 .text-overlay {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 0;
   width: 100%;
   background-color: rgba(50, 50, 50, 0.6);
   color: white;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @keyframes slide-down{

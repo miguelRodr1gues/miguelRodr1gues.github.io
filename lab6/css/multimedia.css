@@ -12,17 +12,21 @@ h2 {
 }
 
 .ancoras a {
-    color: rgb(255, 255, 255);
+    color: rgb(32, 88, 220);
     margin: 10px;
     text-decoration: none;
     padding: 5px 15px;
-    background-color: #0a6ddf;
+    background-color: #ffffff;
     border-radius: 20px;
-
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    border: 1px solid rgb(32, 88, 220);
 }
 
 .ancoras a:hover {
-    background-color: #0231b1;
+    background-color: rgb(32, 88, 220);
+    color: white;
+    transform: scale(50);
 }
 
 #fotografias, #video, #poema {
