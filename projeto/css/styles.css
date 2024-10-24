@@ -38,9 +38,6 @@ nav a:hover {
     transform: scale(1.03);
 }
 
-section {
-    margin: 10px;
-}
 
 .imagens {
     display: flex;
