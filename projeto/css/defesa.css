@@ -1,0 +1,92 @@
+.intro{
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+section {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+header {
+    background-color: #d3d3d3;
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #bababa;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.labs a {
+
+    text-decoration: none;
+    background-color: #cdcdcd;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    flex-direction: row;
+    flex-wrap: w;
+}
+
+.labs a:nth-child(odd){
+    background-color: grey;
+
+}
+
+.labs {
+    display: flex;
+}
+
+div {
+    margin: 10px;
+}
+
+.main {
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+}
+
+img {
+
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

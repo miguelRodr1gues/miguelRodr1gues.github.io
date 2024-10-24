@@ -1,0 +1,103 @@
+/* Estilos gerais */
+header { grid-area: header-area; }
+nav { grid-area: nav-area; }
+main { grid-area: main-area; }
+aside { grid-area: aside-area; }
+footer { grid-area: footer-area; }
+
+
+@media only screen and (max-width: 1440px) {
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header-area' 
+            'nav-area' 
+            'main-area' 
+            'aside-area' 
+            'footer-area';
+    }
+
+    .imagens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens img {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1440px) {
+
+    .imagens {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .imagens img {
+        width: 48%;
+        margin: 10px;
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: relative;
+    }
+
+    .dropbtn {
+        background-color: #000;
+        padding: 16px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown-content {
+        display: none;
+        background-color: #f9f9f9;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown {
+        position: static;
+        width: 100%;
+    }
+}
