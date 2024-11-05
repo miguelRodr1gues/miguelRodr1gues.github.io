@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h3 class="passa">1. Passa por aqui</h3>
+        </section>
+        
+        <section>
+            <h3 class="pinta">2. Pinta-me!</h3>
+            <div class="color-buttons">
+                <button type="button" onclick="changeColor('red')">Red</button>
+                <button type="button" onclick="changeColor('green')">Green</button>
+                <button type="button" onclick="changeColor('blue')">Blue</button>
+            </div>
+        </section>
+        
+        <section>
+            <h3>3. Experimenta escrever...</h3>
+            <label for="inputHighlight"></label>
+            <input type="text" id="inputHighlight" placeholder="Escreve qualquer coisa" oninput="changeBackgroundColor()">
+        </section>
+
+        <section>
+            <h3>4. Escolha uma cor em inglês:</h3>
+            <input type="text" id="color" placeholder="color">
+            <button type="submit" onclick="submitColor()">Submeter</button>
+        </section>
+
+        <section>
+            <h3>5. Conta!</h3>
+            <button type="button" onclick="count()">Conta!</button>
+            <span id="count">0</span>
+        </section>
+    </main>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
