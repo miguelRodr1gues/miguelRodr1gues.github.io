@@ -14,11 +14,7 @@ function changeBackgroundColor() {
 
 // Muda cor de background
 function submitColor() {
-    let color = document.getElementById("color").value;
-
-    if(color === "nigga"){
-        color = "black";
-    }
+    const color = document.getElementById("color").value;
     document.body.style.backgroundColor = color;
 }
 
@@ -39,3 +35,25 @@ passar.addEventListener('mouseover', () => {
 passar.addEventListener('mouseout', () => {
     passar.textContent = "1. Passa por aqui";
 });
+
+document.querySelector('select').onchange = function() {
+    document.querySelector('body').style.backgroundColor = this.value;
+}
+
+document.querySelector('form').onsubmit = (e) => {
+    e.preventDefault();
+    
+    const nome = document.getElementById("nome").value;
+    const idade = document.getElementById("idade").value;
+
+    // Exibir a mensagem
+    document.getElementById("mensagem").textContent = `Olá ${nome}, tens ${idade} anos.`;
+};
+
+let automaticCounter;
+function automaticCounter() {
+
+    automaticCounter++;
+    document.getElementById('automaticCounter').textContent = count;
+}
+setInterval(count, 1000);

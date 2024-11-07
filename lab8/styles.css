@@ -2,6 +2,7 @@ body {
     background-color: #ffffff;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 header {
@@ -12,7 +13,7 @@ header {
     align-items: center;
     display: flex;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-
+    width: 100%;
     animation-name: slide-down;
     animation-duration: 1s;
 }
@@ -63,34 +64,52 @@ section {
   }
 
   button {
-    background-color: #fff942;
-    padding: 3px 10px;
+    background-color: #fdf61a;
+    padding: 5px 10px;
     font-size: 18px;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
     transition: background-color 0.2s, transform 0.3s;
     margin: 0 3px 0 3px;
     border: none;
   }
 
   button:hover {
-    background-color: white;
-    color: #fff942;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
     transform: scale(1.03);
-    border: 1px solid  #fff942;
+    border: 1px solid  #000000;
   }
 
   .hidden {
     display: none;
 }
 
-  input[type="text"],
-  input[type="number"] {
-    font-size: medium;
-    padding: 12px;
-    border: 1px solid #ced4da;
-    border-radius: 6px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-  }
+input[type="submit"] {
+  background-color: #fdf61a;
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+
+
+input[type="text"],
+input[type="number"],
+select {
+  font-size: medium;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
 
