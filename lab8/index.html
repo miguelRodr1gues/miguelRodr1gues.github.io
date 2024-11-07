@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Parte 1/title>
+    <title>JavaScript Parte 2</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
         <section>
             <h3 class="pinta">2. Pinta-me!</h3>
             <div class="color-buttons">
-                <button type="button" onclick="changeColor('red')">Red</button>
-                <button type="button" onclick="changeColor('green')">Green</button>
-                <button type="button" onclick="changeColor('blue')">Blue</button>
+                <button data-color="red">Red</button>
+                <button data-color="green">Green</button>
+                <button data-color="blue">Blue</button>
             </div>
         </section>
         
@@ -47,6 +47,20 @@
             <button type="button" onclick="count()">Conta!</button>
             <span id="count">0</span>
         </section>
+        
+        <section>
+            <form>
+                <label for="name">6.</label>
+                <input type="text" id="name" placeholder="Nome">
+                <input type="number" id="number" value="23">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <p>7. Automatic Counter: <span id="count">0</span></p>
+        </section>
+
     </main>
     
     <script src="scripts/main.js"></script>

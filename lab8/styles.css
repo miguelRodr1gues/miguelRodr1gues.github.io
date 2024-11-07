@@ -80,7 +80,12 @@ section {
     border: 1px solid  #fff942;
   }
 
-  input[type="text"] {
+  .hidden {
+    display: none;
+}
+
+  input[type="text"],
+  input[type="number"] {
     font-size: medium;
     padding: 12px;
     border: 1px solid #ced4da;
