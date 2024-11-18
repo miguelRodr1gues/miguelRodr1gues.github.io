@@ -9,12 +9,11 @@ header {
     background-color: #ad00ad;
     color: #ffffff;
     padding: 0 20px;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    display: flex;
     animation-name: slide-down;
     animation-duration: 1s;
-    margin-bottom: 50px;
 }
 
 nav {
@@ -35,15 +34,22 @@ nav a {
 }
 
 nav a:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
 }
 
-.title {
+.title-produtos {
     text-align: center;
-    font-size: 24px;
     font-weight: bold;
     margin: 20px;
-    color: #333;
+    color: rgb(29, 29, 29);
+    margin-top: 60px;
+}
+
+.title-cesto {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 60px;
+    color: white;
 }
 
 #produtos {
@@ -56,15 +62,13 @@ nav a:hover {
 .product-card {
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 0 20px 20px 20px; 
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 250px;
     text-align: center;
-    transition: transform 0.5s;
-}
-
-.product-card:hover {
-    transform: scale(1.01);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-card img {
@@ -78,9 +82,16 @@ nav a:hover {
 }
 
 .product-card p {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #555;
     margin-bottom: 15px;
+}
+
+p.descricao {
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
 }
 
 .product-card .price {
@@ -90,15 +101,16 @@ nav a:hover {
 }
 
 .product-card button {
+
     background-color: #ad00ad;
     color: #ffffff;
     border: 1px solid #ad00ad;
-    margin: 10px;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
 }
 
 .product-card button:hover {
@@ -108,10 +120,10 @@ nav a:hover {
 
 @keyframes slide-down {
     0% {
-      transform: translateY(-100%);
+        transform: translateY(-100%);
     }
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -120,4 +132,9 @@ nav a:hover {
     color: #ffffff;
     padding: 20px;
     margin: 0px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
 }
