@@ -46,7 +46,7 @@ nav a:hover {
     color: #333;
 }
 
-.produtos {
+#produtos {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -115,7 +115,7 @@ nav a:hover {
     }
 }
 
-.cesto {
+#cesto {
     background-color: #ad00ad;
     color: #ffffff;
     padding: 20px;
