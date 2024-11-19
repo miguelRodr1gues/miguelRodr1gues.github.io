@@ -27,11 +27,17 @@ produtos.forEach((produto) => {
     const productCard = `
         <section class="product-card">
             <h3>${produto.title}</h3>
-            <img src="${produto.image}" alt="${produto.title}" />
-            <p class="price">Custo total: ${produto.price.toFixed(2)} €</p>
-            <p class="descricao">${produto.description}</p>
-            <p class="rating">Rating: ${produto.rating.rate} ⭐ (${produto.rating.count} avaliações)</p>
-            <button>+ Adicionar ao Cesto</button>
+
+            <section class="imagem">
+                <img src="${produto.image}" alt="${produto.title}" />
+            </section>
+
+            <section class="product">
+                <p class="price">Custo total: ${produto.price.toFixed(2)} €</p>
+                <p class="descricao">${produto.description}</p>
+                <p class="rating">Rating: ${produto.rating.rate} ⭐ (${produto.rating.count} avaliações)</p>
+                <button>+ Adicionar ao Cesto</button>
+            </section>
         </section>
     `;
 
