@@ -2,13 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #fff3de;
 }
 
 header {
+
     background-color: #ffffff;
     color: #452b1a;
     padding: 0 20px;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,18 +52,28 @@ nav a:hover::after {
 }
 
 .title-produtos {
-    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    margin: 20px;
     color: rgb(29, 29, 29);
     margin-top: 60px;
 }
 
 .title-cesto {
-    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    margin-top: 60px;
     color: white;
+    background-color: #452b1a;
+}
+
+.title-cesto h2 {
+
+    margin-top: 60px;
 }
 
 #produtos {
@@ -113,16 +125,17 @@ nav a:hover::after {
 .product-card h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
+    color: black;
 }
 
 .product-card p {
     font-size: 1em;
-    color: #555;
+    color: #3f3f3f;
     margin-bottom: 15px;
 }
 
 p.descricao {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(245, 245, 245);
     padding: 10px;
     border-radius: 10px;
     text-align: left;
@@ -162,6 +175,10 @@ p.descricao {
 }
 
 #cesto {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #452b1a;
     color: #ffffff;
     padding: 20px;
@@ -171,4 +188,19 @@ p.descricao {
 footer {
     text-align: center;
     font-weight: bold;
+}
+
+.custo-total {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #452b1a;
+}
+
+#custo-total {
+
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
