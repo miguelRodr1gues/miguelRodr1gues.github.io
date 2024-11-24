@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>DriLux ®</h1>
+
+        <nav>
+            <a href="#produtos" class="ancora">Produtos</a></li>
+            <a href="#cesto" class="ancora">Cesto</a></li>
+        </nav>
+        
+        </header>
+    </header>
+
+    <section class="title-produtos"><h2>Selecione os seus Produtos</h2></section>
+
+    <section class="barra">
+        <p>Filtrar</p>
+        <select id="filtrar">
+            <option value="todas">Todas as categorias</option>
+        </select>
+
+        <p>Ordenar</p>
+        <select id="ordenar">
+            <option value="preco">Ordenar pelo preço</option>
+            <option value="preco-decrescente">Preço Decrescente</option>
+            <option value="preco-crescente">Preço Crescente</option>
+        </select>
+
+        <p>Pesquisar</p>
+        <input type="text" id="pesquisar" placeholder="pesquise por produto">
+    </section>
+
+    <section id="produtos"></section>
+
+    <section class="title-cesto"><h2>Produtos Selecionados</h2></section>
+
+    <section id="cesto"></section>
+
+    <section class="carrinho">
+        <section class="custo-total">
+            <p id="custo-total">Custo total: 0.00 €</p>
+            <p id="estudante">
+                És estudante do DEISI? 
+                <input type="checkbox" id="checkbox-estudante" name="estudante">
+            </p>
+            <p id="cupao">
+                Cupão de desconto: 
+                <input type="text" id="input-cupao" name="cupao">
+            </p>
+            <button class="comprar">Comprar</button>
+            <section class="dados"></section>
+        </section>
+        
+    </section>
+
+    <script src="main.js"></script>
+
+    <footer>
+        <p>2024</p>
+    </footer>
+</body>
+</html>
