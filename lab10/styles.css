@@ -238,8 +238,20 @@ footer {
 .comprar {
 
     font-size: 17px;
-    color: rgb(0, 0, 0);
-    margin: 10px;
+    background-color: #452b1a;
+    color: #ffffff;
+    border: 1px solid #452b1a;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.comprar:hover {
+
+    background-color: white;
+    color: #452b1a;
 }
 
 .barra {
@@ -306,4 +318,9 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.valor-final {
+
+    font-weight: bold;
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Lisboa</title> 
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", async () => {
+    
+            const divs = document.querySelectorAll('div');
+            const div = divs[divs.length - 1];
+    
+                fetch('https://deisishop.pythonanywhere.com/categories/')
+                    .then(response => response.json())
+                    .then(data => {
+                        
+                        const taxaCambio = data[0];
+
+                        div.textContent = `USD: ${taxaCambio}`;
+                    })
+                    .catch(error => console.error('Erro:', error));
+        });
+
+
+    </script> 
+    
+</head> 
+<body> 
+    <div><h1>Taxas de câmbio</h1></div> 
+    <div>Por 1 EUR recebemos</div> 
+    <div id="taxa-usd"></div> 
+</body> 
+</html>

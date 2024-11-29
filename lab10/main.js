@@ -1,16 +1,17 @@
+
+// Caso não existir nada na chave 'produtos-selecionados', da set a chave produtos-selecionados vazios
 function criaLocalStorage() {
     if (!localStorage.getItem('produtos-selecionados')) {
         localStorage.setItem('produtos-selecionados', JSON.stringify([]));
     }
 }
 
+// Limpa o storage cada quando o utilizador compra
 function limparStorage() {
     localStorage.setItem('produtos-selecionados', JSON.stringify([]));
 }
 
-let produtosSelecionados = [];
-let custoTotal = 0;
-
+// Desliza até a ancora que o utilizador carregou
 document.querySelectorAll('.ancora').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -33,14 +34,22 @@ document.querySelectorAll('.ancora').forEach(link => {
 const produtosContainer = document.getElementById("produtos");
 const cestoContainer = document.getElementById("cesto");
 const custoTotalElemento = document.getElementById("custo-total");
+let produtosSelecionados = [];
+let custoTotal = 0;
 
+// Atualiza o custo total cada vez que o utilizador mete um produto no cesto ou quando da refresh
 function atualizarCustoTotal() {
+
     custoTotal = produtosSelecionados.reduce((acc, produto) => acc + produto.price, 0);
     custoTotalElemento.textContent = `Custo total: ${custoTotal.toFixed(2)} €`;
 }
 
+// Cria o produto no cesto com base no produto carregado
 function criaProdutoCesto(produto) {
+
+    
     produtosSelecionados.push(produto);
+
     localStorage.setItem('produtos-selecionados', JSON.stringify(produtosSelecionados));
 
     const itemCesto = document.createElement("section");
@@ -59,11 +68,13 @@ function criaProdutoCesto(produto) {
     const removerBtn = itemCesto.querySelector(".remover");
     removerBtn.addEventListener("click", () => removerDoCesto(produto, itemCesto));
 
-    cestoContainer.appendChild(itemCesto);
+    cestoContainer.append(itemCesto);
     atualizarCustoTotal();
 }
 
+// Remove o produto do cesto quando carrego no botao remover
 function removerDoCesto(produto, produtoCesto) {
+
     const index = produtosSelecionados.findIndex(p => p.id === produto.id);
 
     if (index !== -1) {
@@ -75,7 +86,9 @@ function removerDoCesto(produto, produtoCesto) {
     atualizarCustoTotal();
 }
 
+// Cria a seccao produto para meter no body
 function criarProduto(produto) {
+    
     const productCard = document.createElement("section");
     productCard.classList.add("product-card");
 
@@ -98,23 +111,27 @@ function criarProduto(produto) {
     return productCard;
 }
 
+// Carrega todos os produtos de forma a aparecer
 function carregarProdutos(produtos) {
     produtosContainer.innerHTML = '';
     produtos.forEach((produto) => {
         const artigoProduto = criarProduto(produto);
-        produtosContainer.appendChild(artigoProduto);
+        produtosContainer.append(artigoProduto);
     });
 }
 
+// Atualiza o cesto quando dou refresh no site ou quando compro algum produto
 function atualizaCesto() {
-    produtosCarrinho = JSON.parse(localStorage.getItem('produtos-selecionados')) || [];
-    produtosCarrinho.forEach((produto) => {
+    
+    const produtosCesto = JSON.parse(localStorage.getItem('produtos-selecionados'));
+    produtosCesto.forEach((produto) => {
         criaProdutoCesto(produto);
     });
 }
 
 let produtos = [];
 
+// da get aos produtos
 fetch('https://deisishop.pythonanywhere.com/products/')
     .then(response => response.json())
     .then(data => {
@@ -125,6 +142,7 @@ fetch('https://deisishop.pythonanywhere.com/products/')
     })
     .catch(error => console.error('Erro:', error));
 
+// da get as categorias
 fetch('https://deisishop.pythonanywhere.com/categories/')
     .then(response => response.json())
     .then(data => opcoesFiltro(data))
@@ -163,16 +181,19 @@ document.querySelector('#filtrar').addEventListener('change', (event) => {
     filtrar();
 });
 
+// Caso haja mudança na ordem filtra
 document.querySelector('#ordenar').addEventListener('change', (event) => {
     ordem = event.target.value;
     filtrar();
 });
 
+// Caso haja mudança na pesquisa filtra
 document.querySelector('#pesquisar').addEventListener('input', (event) => {
     pesquisa = event.target.value;
     filtrar();
 });
 
+// Adiciona os varios filtros
 function opcoesFiltro(opcoes) {
     const filtros = document.querySelector('#filtrar');
     opcoes.forEach(opcao => {
@@ -180,6 +201,7 @@ function opcoesFiltro(opcoes) {
     });
 }
 
+// Quando o utilizador compra dá a o custo total com descontos eventuais e referencia
 document.querySelector('.comprar').addEventListener('click', () => {
     fetch('https://deisishop.pythonanywhere.com/buy/', {
         method: 'POST',
@@ -188,29 +210,27 @@ document.querySelector('.comprar').addEventListener('click', () => {
         },
         body: JSON.stringify(compra()),
     })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro na requisição: ' + response.statusText);
-            }
-            return response.json();
-        })
+        .then(response => response.json()
         .then(data => {
             document.querySelector('.dados').innerHTML = `
-                <p>Valor final a pagar (com eventuais descontos): ${data.totalCost} €</p>
+                <p class="valor-final">Valor final a pagar (com eventuais descontos): ${data.totalCost} €</p>
                 <p>Referência de pagamento: ${data.reference}</p>
             `;
         })
-        .catch(error => console.error('Erro ao processar a requisição:', error));
+        .catch(error => console.error('Erro ao processar a requisição:', error)));
 });
 
+// funcao é executada quando o utilizador carrega em comprar
 function compra() {
+
     const products = produtosSelecionados.map(produto => produto.id);
-    const student = document.querySelector('#estudante').checked;
-    const coupon = document.querySelector('#cupao').value;
+    const student = document.querySelector('#checkbox-estudante').checked;
+    const coupon = document.querySelector('#input-cupao').value;
 
     limparStorage();
     produtosSelecionados = [];
     atualizaCesto();
+    cestoContainer.innerHTML = '';
 
     return { products, student, coupon };
 }
