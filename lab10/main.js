@@ -228,9 +228,7 @@ function compra() {
     const coupon = document.querySelector('#input-cupao').value;
 
     limparStorage();
-    produtosSelecionados = [];
     atualizaCesto();
-    cestoContainer.innerHTML = '';
 
     return { products, student, coupon };
 }
