@@ -86,6 +86,8 @@ function removerDoCesto(produto, produtoCesto) {
     atualizarCustoTotal();
 }
 
+let produtosTodos = [];
+
 // Cria a seccao produto para meter no body
 function criarProduto(produto) {
     
@@ -162,19 +164,21 @@ function filtrar() {
     }
 
     if (ordem === 'preco-decrescente') {
-        produtosFiltrados.sort((a, b) => b.price - a.price);
+        produtosFiltrados.sort((a, b) => b.rating.rate - a.rating.rate);
     } else if (ordem === 'preco-crescente') {
-        produtosFiltrados.sort((a, b) => a.price - b.price);
+        produtosFiltrados.sort((a, b) => a.rating.rate - b.rating.rate);
     }
 
     if (pesquisa) {
         produtosFiltrados = produtosFiltrados.filter(produto =>
-            produto.title.toLowerCase().includes(pesquisa.toLowerCase())
+            produto.title.toLowerCase().includes(pesquisa.toLowerCase()) || produto.description.toLowerCase().includes(pesquisa.toLowerCase())
         );
     }
 
     carregarProdutos(produtosFiltrados);
 }
+
+
 
 document.querySelector('#filtrar').addEventListener('change', (event) => {
     filtro = event.target.value;
@@ -215,6 +219,7 @@ document.querySelector('.comprar').addEventListener('click', () => {
             document.querySelector('.dados').innerHTML = `
                 <p class="valor-final">Valor final a pagar (com eventuais descontos): ${data.totalCost} €</p>
                 <p>Referência de pagamento: ${data.reference}</p>
+                <p>Morada: ${data.address}</p>
             `;
         })
         .catch(error => console.error('Erro ao processar a requisição:', error)));
@@ -226,9 +231,29 @@ function compra() {
     const products = produtosSelecionados.map(produto => produto.id);
     const student = document.querySelector('#checkbox-estudante').checked;
     const coupon = document.querySelector('#input-cupao').value;
+    const address = document.querySelector('#input-morada').value;
 
     limparStorage();
     atualizaCesto();
 
-    return { products, student, coupon };
+    return { products, student, coupon , address };
+}
+
+const adicionarAll = document.querySelector('#adicionar-todos');
+adicionarAll.addEventListener("click", () => adicionarTodos());
+
+function adicionarTodos(produtos) {
+
+    produtos.forEach((produto) => {
+        criaProdutoCesto(produto);
+    });
+}
+
+
+const menosInfo = document.querySelector.querySelector("#menosInfo");
+menosInfo.addEventListener("click", () => menosInfoProdutos());
+
+function menosInfoProdutos() {
+
+
 }
