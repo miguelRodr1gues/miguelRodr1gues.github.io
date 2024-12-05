@@ -107,6 +107,8 @@ function criarProduto(produto) {
         </article>
     `;
 
+    produtosTodos.push(produto);
+
     const button = productCard.querySelector("button");
     button.addEventListener("click", () => criaProdutoCesto(produto));
 
@@ -242,18 +244,19 @@ function compra() {
 const adicionarAll = document.querySelector('#adicionar-todos');
 adicionarAll.addEventListener("click", () => adicionarTodos());
 
-function adicionarTodos(produtos) {
+function adicionarTodos() {
 
-    produtos.forEach((produto) => {
+    produtosTodos.forEach((produto) => {
         criaProdutoCesto(produto);
     });
 }
 
 
-const menosInfo = document.querySelector.querySelector("#menosInfo");
+const menosInfo = document.querySelector("#menosInfo");
 menosInfo.addEventListener("click", () => menosInfoProdutos());
 
 function menosInfoProdutos() {
 
-
+    produto.description.remove();
+    
 }
